@@ -1,0 +1,17 @@
+name: cDemo CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-run:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v2
+    - name: list all files
+      run: ls $(pwd)
+    - name: build
+      run: gcc -Wall -o test main.c
+    - name: run
+      run: ./test
