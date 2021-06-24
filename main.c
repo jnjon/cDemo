@@ -7,7 +7,7 @@ int addTwoNums(int first, int second) {
 
 int main() {
 	int first = 8;
-	int second = ;
+	int second = 9;
 	printf("%d + %d = %d\n", first, second, addTwoNums(first, second));
 	return 0;
 }
